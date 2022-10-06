@@ -57,7 +57,7 @@ jobs:
           name: backend-build
           path: backend/target
       - name: Login to Heroku
-        run: heroku container:Login
+        run: heroku container:login
       - name: Push Docker Image
         run: heroku container:push web -a testdgdsgsd
       - name: Release Docker Container
