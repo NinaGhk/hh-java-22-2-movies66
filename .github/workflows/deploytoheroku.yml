@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '14'
       - name: Build Frontend
         run: |
           cd frontend
@@ -47,7 +47,7 @@ jobs:
     needs: build-backend
     environment:
       name: Produktion Heroku
-      url: testdgdsgsd.herokuapp.com
+      url: https://testdgdsgsd.herokuapp.com/
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
     steps:
