@@ -4,8 +4,9 @@ export default function NavBar(){
 
     return(
         <>
-            <Link to={"/"}> Homepage </Link>
-            <Link to={"/movies"}> Movies </Link>
+            <Link to={"/"}> Movies </Link>
+            <Link to={"/homepage"}> Homepage
+            </Link>
         </>
     )
 }
