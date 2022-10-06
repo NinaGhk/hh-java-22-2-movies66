@@ -43,7 +43,10 @@ export default function MovieGallery(props:MovieGalleryProps){
             </form>
 
             <div className={"cards"}>
-            {props.movies.map((m) =>
+                {props.movies.length <1 ?
+                    <h1> Keine Filme Vorhanden </h1>
+                    :
+                    props.movies.map((m) =>
                 <div className={"card"}>
                 <MovieCard movie={m}/>
                 </div>)}
