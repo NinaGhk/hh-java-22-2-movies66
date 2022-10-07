@@ -49,7 +49,7 @@ jobs:
       name: Produktion Heroku
       url: https://movies66.herokuapp.com/
     env:
-      HEROKU_CLOUD_KEY: ${{ secrets.HEROKU_CLOUD_KEY }}
+      HEROKU_API_KEY: ${{ secrets.HEROKU_CLOUD_KEY }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v2
